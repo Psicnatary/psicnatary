@@ -28,21 +28,10 @@
 }
 
 /* ======================================================================================================================== */
-/* LIGHT MODE - Seções com fundo claro */
-.articles-container body.light-mode section {
-    background: #eaeaea;
-    border: 2px solid transparent;
-}
-
-/* ======================================================================================================================== */
 /* Efeito de hover nas seções */
 .articles-container section:hover {
     border-color: #6d6f78; /* Altera a borda na interação */
     transform: scale(1.01);
-}
-
-.articles-container body.light-mode section:hover {
-    border-color: #c0c2c5;
 }
 
 /* ======================================================================================================================== */
@@ -84,13 +73,28 @@
 }
 
 /* ======================================================================================================================== */
-/* Light mode - Texto dentro da seção */
-.articles-container body.light-mode section .content {
-    color: #4a4a4a;
+/* LIGHT MODE - Ajustes para temas claros */
+/* ======================================================================================================================== */
+body.light-mode .articles-container section {
+    background: #eaeaea; /* Fundo claro */
+    border-color: #c0c2c5; /* Borda clara */
+}
+
+body.light-mode .articles-container section:hover {
+    border-color: #b0b2b5; /* Cor de borda ao passar o mouse */
+}
+
+body.light-mode .articles-container section .content h2 {
+    color: #333333; /* Título em modo claro */
+}
+
+body.light-mode .articles-container section .content p {
+    color: #4a4a4a; /* Texto do parágrafo em modo claro */
 }
 
 /* ======================================================================================================================== */
 /* @media Queries para Responsividade */
+/* ======================================================================================================================== */
 
 /* Exibe 2 colunas em telas pequenas (menos de 1024px) */
 @media (max-width: 1024px) {
