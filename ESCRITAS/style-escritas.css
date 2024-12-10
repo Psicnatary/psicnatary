@@ -1,0 +1,84 @@
+/* Container das poesias */
+.poesias-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsivo: 1 a n colunas, mínimo 300px */
+    gap: 1.5rem;
+    padding: 1rem;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilo das sessões de poesias */
+.poesia {
+    background: #40444b; /* Cor de fundo escura do site */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 90%;
+    height: auto;
+    padding: 1rem;
+    cursor: pointer; /* Para indicar que é clicável */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Estilo da imagem dentro da poesia */
+.poesia img {
+    width: 100%;
+    height: auto;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+/* Título da poesia */
+.poesia .content h2 {
+    margin: 0 0 10px 0;
+    font-family: 'Teko', sans-serif;
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+/* Texto completo da poesia */
+.poesia .full-text {
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    color: #b9bbbe; /* Cor clara similar ao menu */
+    line-height: 1.6;
+    margin-top: 1rem;
+    max-height: 0; /* Começa com altura 0 */
+    overflow: hidden; /* Esconde o texto */
+    transition: max-height 0.5s ease-in-out; /* Transição suave para expandir/recolher */
+}
+
+/* Efeito de hover nas poesias */
+.poesia:hover {
+    border-color: #6d6f78; /* Cor azul para efeito de hover */
+}
+
+.ensaios-container section:hover {
+    border-color: #6d6f78; /* Altera a borda na interação */
+}
+
+
+/* Expansão do texto da poesia ao clicar */
+.poesia.clicked .full-text {
+    max-height: 1000px; /* Tamanho arbitrário para garantir que o texto expanda */
+}
+
+/* Light mode - Ajustes */
+.poesia.light-mode {
+    background: #eaeaea; /* Cor mais clara para o fundo em modo claro */
+    border-color: #c0c2c5;
+}
+
+/* Hover no modo claro */
+.poesia.li

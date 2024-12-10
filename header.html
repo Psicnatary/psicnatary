@@ -1,0 +1,53 @@
+<header class="header">
+    <div class="logo">
+        <img src="IMG/logo.gif" alt="Logo do site">
+    </div>
+    <button class="hamburger" aria-label="Abrir menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </button>
+    <nav>
+        <ul class="menu">
+            <li><a href="#" onclick="carregarConteudo('home.html')">Home</a></li>
+            <li>
+                <a href="#" onclick="carregarConteudo('ARTIGOS/artigos.html')">Artigos</a>
+                <ul class="submenu">
+                    <li><a href="#" onclick="carregarConteudo('ARTIGOS-PSI/ACP.html')">Psicologia</a></li>
+                    <li><a href="#" onclick="carregarConteudo('pages/filosofia.html')">Filosofia</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" onclick="carregarConteudo('ENSAIOS/ensaios.html')">Ensaios</a>
+                <ul class="submenu">
+                    <li><a href="#" onclick="carregarConteudo('pages/livros.html')">Livros</a></li>
+                    <li><a href="#" onclick="carregarConteudo('pages/audiovisual.html')">Audiovisual</a></li>
+                </ul>
+            </li>
+            <li><a href="#" onclick="carregarConteudo('ESCRITAS/escritas.html')">Escritas</a></li>
+            <li><a href="#" onclick="carregarConteudo('pages/arte.html')">Arte</a></li>
+            <li><a href="#" onclick="carregarConteudo('pages/indicacoes.html')">Indicações</a></li>
+            <li><a href="#" onclick="carregarConteudo('pages/sobre.html')">Sobre</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Barra de Pesquisa -->
+
+    <div class="header-right">
+        <!-- Barra de pesquisa minimalista -->
+        <form class="search-bar" action="/search" method="get">
+            <input type="text" name="query" placeholder="Buscar..." />
+            <button type="submit">
+                <span class="material-icons">search</span>
+            </button>
+        </form>
+
+        <button class="theme-toggle">
+            <span class="material-icons">dark_mode</span>
+        </button>
+
+    </div>
+</header>
+
+
+
