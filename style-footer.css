@@ -1,0 +1,99 @@
+/* ======================================================================================================================== */
+/* RODAPÉ */
+/* ======================================================================================================================== */
+footer {
+    flex-shrink: 0; /* Impede que o footer encolha */
+    width: 100%;
+    background-color: #222;
+    color: #ccc;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto; /* Faz o rodapé ir para a parte inferior */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #f5f5f5;
+}
+
+.footer-section p, .footer-section ul li {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    font-size: 14px;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    color: #aaa;
+}
+
+/* Instagram Section */
+.instagram-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    width: 50px;
+}
+
+.instagram-section svg {
+    width: 28px;
+    height: 28px;
+    fill: #ffffff; /* Cor mais suave e contrastante */
+    transition: fill 0.3s ease;
+}
+
+.instagram-link {
+    text-decoration: none;
+    color: #ffffff; /* Combina com o ícone */
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.instagram-link:hover {
+    color: #ffa5a5; /* Tom mais claro para hover */
+}
+
+.instagram-section:hover svg {
+    fill: #ffa5a5; /* Ícone muda de cor ao passar o mouse */
+}

@@ -1,0 +1,38 @@
+
+/* =============== RESET DE ESTILO GLOBAL ======================================================== */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* =============== FORMATAÇÃO BODY ======================================================== */
+body {
+    font-family: 'Teko', sans-serif;
+    background: linear-gradient(135deg, #1c1e26, #232635, #2b3050, #37406a, #2b3050, #232635, #1c1e26);
+    background-size: 300% 300%;
+    animation: gradient-shift 20s ease-in-out infinite;
+    color: #dcddde;
+}
+
+/* =============== GRADIENTE FUNDO ======================================================== */
+@keyframes gradient-shift {
+    0% { background-position: 0% 0%; }
+    25% { background-position: 50% 25%; }
+    50% { background-position: 100% 50%; }
+    75% { background-position: 50% 75%; }
+    100% { background-position: 0% 100%; }
+}
+
+/* =============== FORMATAÇÃO TEMA BODY ======================================================== */
+body.light-mode {
+    background: linear-gradient(135deg, #f5f5f7, #e4dff7, #d3c8f7, #c7b3f0, #d3c8f7, #e4dff7, #f5f5f7);
+    background-size: 300% 300%;
+    animation: gradient-shift 20s ease-in-out infinite;
+    color: #4a4a4a;
+}
+
+

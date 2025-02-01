@@ -1,0 +1,111 @@
+/* ======================================================================================================================== */
+/* ARTIGOS CONTAINER */
+.articles-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsivo: 1 a n colunas, mínimo 280px */
+    gap: 1.5rem; /* Maior espaço entre as colunas */
+    padding: 1rem;
+    justify-content: center; /* Centraliza o conteúdo */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; /* Centraliza o container */
+}
+
+/* ======================================================================================================================== */
+/* ESTILO DAS SEÇÕES */
+.articles-container section {
+    background: #40444b;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    border: 2px solid transparent; /* Sem borda padrão */
+    transition: border-color 0.3s ease-in-out;
+    display: flex; /* Flex para garantir o layout correto */
+    flex-direction: column; /* Empilha o conteúdo verticalmente */
+    justify-content: flex-start; /* Alinha o conteúdo no topo */
+    width: 90%; /* Usando 100% de largura dentro do grid */
+    height: auto; /* Altura automática conforme o conteúdo */
+    padding: 1rem; /* Espaçamento interno */
+}
+
+/* ======================================================================================================================== */
+/* Efeito de hover nas seções */
+.articles-container section:hover {
+    border-color: #6d6f78; /* Altera a borda na interação */
+    transform: scale(1.01);
+}
+
+/* ======================================================================================================================== */
+/* Imagem dentro das seções */
+.articles-container section img {
+    width: 100%; /* A imagem ocupa toda a largura disponível */
+    height: auto; /* Mantém a proporção */
+    max-height: 150px; /* Limita a altura máxima da imagem */
+    object-fit: cover; /* Cobre o espaço da imagem */
+    border-radius: 6px; /* Bordas arredondadas para as imagens */
+    margin-bottom: 1rem; /* Espaço abaixo da imagem */
+}
+
+/* ======================================================================================================================== */
+/* Título das seções */
+.articles-container section .content h2 {
+    margin: 0px 0px 10px 0px; /* Remove as margens laterais e adiciona espaço abaixo */
+    font-family: 'teko', sans-serif;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.3;
+    color: #ffffff; /* Cor do título */
+}
+
+/* ======================================================================================================================== */
+/* Parágrafo de texto dentro das seções */
+.articles-container section .content p {
+    margin: 0px 0px 15px 0px; /* Espaçamento abaixo do parágrafo */
+    font-family: 'Arial', sans-serif;
+    font-weight: 150;
+    font-size: 1rem;
+    line-height: 1.3;
+    color: #cccccc; /* Cor do texto */
+    display: -webkit-box;
+    -webkit-line-clamp: 6; /* Limita o texto a 6 linhas */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Retorna "..." no final de textos longos */
+}
+
+/* ======================================================================================================================== */
+/* LIGHT MODE - Ajustes para temas claros */
+/* ======================================================================================================================== */
+body.light-mode .articles-container section {
+    background: #eaeaea; /* Fundo claro */
+    border-color: #c0c2c5; /* Borda clara */
+}
+
+body.light-mode .articles-container section:hover {
+    border-color: #b0b2b5; /* Cor de borda ao passar o mouse */
+}
+
+body.light-mode .articles-container section .content h2 {
+    color: #333333; /* Título em modo claro */
+}
+
+body.light-mode .articles-container section .content p {
+    color: #4a4a4a; /* Texto do parágrafo em modo claro */
+}
+
+/* ======================================================================================================================== */
+/* @media Queries para Responsividade */
+/* ======================================================================================================================== */
+
+/* Exibe 2 colunas em telas pequenas (menos de 1024px) */
+@media (max-width: 1024px) {
+    .articles-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+    }
+}
+
+/* Exibe 1 coluna em telas menores (menos de 768px) */
+@media (max-width: 768px) {
+    .articles-container {
+        grid-template-columns: 1fr; /* 1 coluna */
+    }
+}

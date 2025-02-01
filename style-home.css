@@ -1,0 +1,106 @@
+.introducao {
+    text-align: ;
+    padding: 2rem;
+    background: url('img/bannerhome.jpg') no-repeat center center; /* Define o fundo */
+    background-size: cover; /* Garante que a imagem cubra toda a área */
+    color: #ffffff; /* Texto branco para destacar */
+    border-radius: 10px;
+    margin: 1rem auto;
+    max-width: 1400px;
+    height: 450px; /* Mantém uma altura fixa */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente o conteúdo */
+    align-items: center; /* Centraliza horizontalmente o conteúdo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra */
+    opacity: 100%;
+}
+
+/* Seção de Destaques */
+.destaques {
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 1200px;
+}
+
+.destaques-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.destaque {
+    background: #40444b;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease-in-out;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.destaque:hover {
+    border-color: #6d6f78;
+}
+
+.destaque img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+.destaque .content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.destaque .content p {
+    color: #b9bbbe;
+    margin-bottom: 0.5rem;
+}
+
+/* Seção de Categorias */
+.categorias {
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 1200px;
+}
+
+.categorias-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    justify-content: center;
+}
+
+.categoria {
+    background: #40444b;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease-in-out;
+    text-align: center;
+    padding: 1rem;
+    color: #fff;
+}
+
+.categoria:hover {
+    border-color: #6d6f78;
+}
+
+.categoria span {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.categoria h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
